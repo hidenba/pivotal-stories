@@ -5,7 +5,7 @@ Bundler.require
 
 require 'json'
 
-class DoneStories < Thor
+class PivotalStories < Thor
   desc 'list', '終了したストーリの一覧を取得します'
   option :project_id, require: true, aliases: :p
   option :token, require: true, aliases: :t
@@ -40,4 +40,4 @@ class DoneStories < Thor
   end
 end
 
-DoneStories.start(ARGV)
+PivotalStories.start(ARGV)
